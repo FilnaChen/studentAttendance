@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>学生考勤系统</title>
+<link rel="stylesheet" href="./css/common.css"/>
+<link rel="stylesheet" href="./css/teacher_index.css"/>
+</head>
+<body>
+<div id="header">
+<p class="bigFont">学生考勤系统</p>
+<p class="smallFont">Student Attendance System</p>
+</div>
+<div id="content">
+<div id="pageList">
+	<div id="user">
+	<img src="./images/ico02.gif"/>
+	<p>您好，</p>
+	<a href="">[退出]</a>
+	</div>
+	<div id="list">
+	<ul>
+	<li><a class="list" href="javascript:void(0);">首页</a></li>
+	<li><a class="list" href="javascript:void(0);">签到时间管理</a></li>
+	<li><a class="list" href="javascript:void(0);">学生成绩管理</a></li>
+	<li><a class="list" href="javascript:void(0);">课程信息管理</a></li>
+	<li><a class="list" href="javascript:void(0);">班级信息管理</a></li>
+	<li><a class="list" href="javascript:void(0);">学生信息管理</a></li>
+	</ul>
+	</div>
+</div>
+<!-- 主页 -->
+<div id="index"><img src="./images/welcome.gif"/></div>
+<!-- 签到设置页面 -->
+<div id="signIn">
+<div id="signWrap">
+	<div id="signPage">签到设置页面</div>
+	<div id="signSet">
+		<fieldset>
+			<legend>设置考勤时间</legend>
+			<form name="form1" method="post" action="">
+				<label for="stable">固定时间设置</label><br/>
+				<label for="course">请选择课程</label>
+				<select>
+					<option></option>
+				</select>
+				<select>
+					<option></option>
+				</select><br/>
+				<label for="day">请选择星期:</label>
+				<select>
+					<option>周一</option>
+					<option>周二</option>
+					<option>周三</option>
+					<option>周四</option>
+					<option>周五</option>
+					<option>周六</option>
+					<option>周日</option>
+				</select><br/>
+				<label for="date">请选择时间：</label>
+				<select>
+					<option></option>
+				</select>
+				<span>时</span>
+				<select>
+					<option></option>
+				</select>
+				<span>分</span>
+				<span class="special">至</span>
+				<select>
+					<option></option>
+				</select>
+				<span>时</span>
+				<select>
+					<option></option>
+				</select>
+				<span>分</span><br/>
+				<input type="submit" name="submitForm1" id="submitForm1" value="保存"/>
+				<input type="reset" name="resetForm1" id="resetForm1" value="返回"/>
+			</form>
+			<form name="form2" method="post" action="">
+				<label for="casual">自定义时间设置</label><br/>
+				<label for="subject">请选择：</label>
+				<select>
+					<option></option>
+				</select>
+				<select>
+					<option></option>
+				</select><br/>
+				<label for="dateSet">请输入日期：</label>
+				<input type="date" name="newDate" id="newDate"/><br/>
+				<label for="time">请选择时间：</label>
+				<select>
+					<option></option>
+				</select>
+				<span>时</span>
+				<select>
+					<option></option>
+				</select>
+				<span>分</span>
+				<span class="special">至</span>
+				<select>
+					<option></option>
+				</select>
+				<span>时</span>
+				<select>
+					<option></option>
+				</select>
+				<span>分</span><br/>
+				<input type="submit" name="submitForm2" id="submitForm2" value="保存"/>
+				<input type="reset" name="resetForm2" id="resetForm2" value="返回"/>
+			</form>
+		</fieldset>
+	</div>
+	</div>
+</div>
+<!-- 班级信息页面 -->
+<div id="class">
+	<div id="classWrap">
+		<div id="classPage"><p>班级信息页面</p></div>
+		<div id="classSet">
+			<table border="1" cellspacing="0" cellpadding="0">
+				<tr class="trTitle1"><td colspan="5">班级信息列表</td></tr>
+				<tr class="trTitle2">
+					<td>班级名称</td>
+					<td>班级人数</td>
+					<td>级</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- 课程信息页面-->
+<div id="course">
+<div id="courseWrap">
+	<div id="coursePage">课程信息页面</div>
+	<div id="courseSet">
+		<fieldset>
+			<legend>课程信息</legend>
+			<form name="form1" method="post" action="">
+				<label for="course">请选择班级：</label>
+				<select>
+					<option></option>
+				</select><br/>
+				<label for="courseType">请输入课程:</label>
+				<input type="text" name="newCourse" id="newCourse"/><br/>
+				<label for="courseNum">请输入考勤次数：</label>
+				<input type="number" name="courseNumber" id="courseNumber"/><br/>
+				<label for="remark" style="float:left">备注：</label>
+				<textarea cols="40" rows="5"></textarea><br/>
+				<input type="submit" name="submitForm1" id="submitForm1" value="保存"/>
+				<input type="reset" name="resetForm1" id="resetForm1" value="返回"/>
+			</form>
+			
+		</fieldset>
+	</div>
+	</div>
+</div>
+<!--学生成绩页面 -->
+<div id="mark">
+	<div id="markWrap">
+		<div id="markPage"><p>学生成绩页面</p></div>
+		<div id="markSet">
+			<table border="1" cellspacing="0" cellpadding="0">
+				<tr class="trTitle1"><td colspan="6">学生成绩列表</td></tr>
+				<tr class="trTitle2">
+					<td>教师</td>
+					<td>课程</td>
+					<td>学号</td>
+					<td>姓名</td>
+					<td>签到次数</td>
+					<td>分数</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- 学生信息列表 -->
+<div id="student">
+	<div id="studentWrap">
+		<div id="studentPage"><p>学生信息页面</p></div>
+		<div id="studentSet">
+			<table border="1" cellspacing="0" cellpadding="0">
+				<tr class="trTitle1"><td colspan="5">学生信息列表</td></tr>
+				<tr class="trTitle2">
+					<td>学号</td>
+					<td>姓名</td>
+					<td>班级</td>
+					<td>性别</td>
+					<td>电话</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</div>
+<script src="./js/jquery.js" type="text/javascript"></script>
+<script src="./js/teacher.js"></script>
+</body>
+</html>

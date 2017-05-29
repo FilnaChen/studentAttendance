@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>学生考勤系统</title>
+<link rel="stylesheet" href="./css/common.css"/>
+<link rel="stylesheet" href="./css/login.css"/>
+</head>
+<body>
+<div id="header">
+	<p>学生考勤系统</p>
+</div>
+<div id="content">
+	<div id="logo">
+		<img src="./images/ico13.gif"/>
+	</div>
+	<div id="separate">
+		<img src="./images/top02.gif"/>
+	</div>
+	<div id="log">
+		<form name="form1" method="post" action="">
+			<label for="user">用户：</label>
+			<input type="text" name="userName" id="userName"/><br/>
+			<label for="password">密码：</label>
+			<input type="password" name="pwd" id="pwd"/><br/>
+			<select>
+				<option>教师</option>
+				<option>学生</option>
+			</select>
+			<input type="submit" name="submit" id="submit" value="登录"/>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+$(document).ready(function(){
+	$("#index").show();
+	$("#personal").hide();
+	$("#history").hide();
+	$("#mark").hide();
+	$("#pwdChange").hide();
+})
+$(".list").eq(0).click(function(){
+	$("#index").show();
+	$("#personal").hide();
+	$("#history").hide();
+	$("#mark").hide();
+	$("#pwdChange").hide();
+})
+$(".list").eq(1).click(function(){
+	$("#index").hide();
+	$("#personal").show();
+	$("#history").hide();
+	$("#mark").hide();
+	$("#pwdChange").hide();
+})
+$(".list").eq(2).click(function(){
+	$("#index").hide();
+	$("#personal").hide();
+	$("#history").show();
+	$("#mark").hide();
+	$("#pwdChange").hide();
+})
+$(".list").eq(3).click(function(){
+	$("#index").hide();
+	$("#personal").hide();
+	$("#history").hide();
+	$("#mark").show();
+	$("#pwdChange").hide();
+})
+$(".list").eq(4).click(function(){
+	$("#index").hide();
+	$("#personal").hide();
+	$("#history").hide();
+	$("#mark").hide();
+	$("#pwdChange").show();
+})

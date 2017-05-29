@@ -1,0 +1,6 @@
+@font-face{
+	src:url("../fonts/方正舒体简体.ttf");
+	font-family:"方正舒体简体";
+}
+*{margin:0;padding:0;}
+a{text-decoration:none;}

@@ -1,0 +1,56 @@
+$(document).ready(function(){
+	$("#index").show();
+	$("#signIn").hide();
+	$("#class").hide();
+	$("#course").hide();
+	$("#mark").hide();
+	$("#student").hide();
+});
+$(".list").eq(0).click(function(){
+	$("#index").show();
+	$("#signIn").hide();
+	$("#class").hide();
+	$("#course").hide();
+	$("#mark").hide();
+	$("#student").hide();
+});
+$(".list").eq(1).click(function(){
+	$("#index").hide();
+	$("#signIn").show();
+	$("#class").hide();
+	$("#course").hide();
+	$("#mark").hide();
+	$("#student").hide();
+});
+$(".list").eq(2).click(function(){
+	$("#index").hide();
+	$("#signIn").hide();
+	$("#class").show();
+	$("#course").hide();
+	$("#mark").hide();
+	$("#student").hide();
+});
+$(".list").eq(3).click(function(){
+	$("#index").hide();
+	$("#signIn").hide();
+	$("#class").hide();
+	$("#course").show();
+	$("#mark").hide();
+	$("#student").hide();
+});
+$(".list").eq(4).click(function(){
+	$("#index").hide();
+	$("#signIn").hide();
+	$("#class").hide();
+	$("#course").hide();
+	$("#mark").show();
+	$("#student").hide();
+});
+$(".list").eq(5).click(function(){
+	$("#index").hide();
+	$("#signIn").hide();
+	$("#class").hide();
+	$("#course").hide();
+	$("#mark").hide();
+	$("#student").show();
+});
